@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Crysis-Style Profile</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+body {
+    margin: 0;
+    height: 100vh;
+    background-color: #000;
+    overflow: hidden;
+    color: #00ff00; /* Neon green for a techy look */
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#profile {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    border: 2px solid #00ff00;
+}
+
+.hidden {
+    display: none;
+}
+
+#theme-toggle {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: transparent;
+    border: 2px solid #00ff00;
+    color: #00ff00;
+    padding: 10px;
+    cursor: pointer;
+}
+
+body:hover {
+    background-color: #111; /* Slight change on hover */
+}
+
+
+
+
+    </style>
+</head>
+<body>
+    <div id="profile" class="hidden">
+        <h1>Victoria Bukreev</h1>
+        <p>Software Engineering student interested in the gaming industry and the implementation of AI into it.</p>
+    </div>
+    <button id="theme-toggle">Toggle Theme</button>
+    <script src="script.js"></script>
+</body>
+</html>
